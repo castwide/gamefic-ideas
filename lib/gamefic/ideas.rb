@@ -2,12 +2,13 @@
 
 require 'gamefic'
 require 'gamefic/ideas/version'
+require 'gamefic/ideas/idea'
 
 module Gamefic
+  # A Gamefic extension for queryable abstract ideas.
+  #
   module Ideas
     extend Gamefic::Scriptable
-
-    require 'gamefic/ideas/idea'
 
     respond :think, anywhere(Idea) do |actor, idea|
       actor.tell idea.description
