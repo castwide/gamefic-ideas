@@ -1,8 +1,13 @@
 PATH
+  remote: ../gamefic
+  specs:
+    gamefic (3.5.0)
+
+PATH
   remote: .
   specs:
     gamefic-ideas (0.1.0)
-      gamefic (~> 3.0)
+      gamefic (~> 3.5)
 
 GEM
   remote: https://rubygems.org/
@@ -11,7 +16,6 @@ GEM
     concurrent-ruby (1.3.4)
     diff-lcs (1.5.1)
     docile (1.4.1)
-    gamefic (3.4.0)
     opal (1.8.2)
       ast (>= 2.3.0)
       parser (~> 3.0, >= 3.0.3.2)
@@ -56,6 +60,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  gamefic!
   gamefic-ideas!
   opal-rspec (~> 1.0)
   opal-sprockets (~> 1.0)
