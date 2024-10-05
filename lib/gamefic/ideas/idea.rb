@@ -25,6 +25,10 @@ module Gamefic
       def flatten
         []
       end
+
+      def parent=
+        raise RuntimeError, 'Ideas cannot have parents'
+      end
     end
   end
 end
